@@ -61,7 +61,7 @@ plt.plot(selection.index, selection['TEMP_C'], linestyle='solid', c='black', mar
 plt.grid()
 plt.title("Helsinki-Vantaa Airport")
 plt.xlabel("Time")
-plt.ylabel("Temperature (Celsius)")
+plt.ylabel("Temperature (Celsius)") 
 
 # Set output file name
 outputfp = "temp_line_plot.png"

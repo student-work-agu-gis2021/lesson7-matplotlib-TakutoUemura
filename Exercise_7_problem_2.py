@@ -18,6 +18,7 @@
 
 # YOUR CODE HERE 1 to read the data into data and parse dates
 
+
 # This test print should print first five rows
 print(data.head())
 
@@ -31,6 +32,7 @@ print(len(data))
 # - Store the selection in a new variable `selection`
 
 # YOUR CODE HERE 2
+
 
 # Check that the data was read in correctly:
 selection.head()
@@ -51,12 +53,20 @@ print("Number of rows:", len(selection))
 # 
 
 # YOUR CODE HERE 3
+import matplotlib.pyplot as plt
+selection = selection.sort_index()
+plt.plot(selection.index, selection['TEMP_C'], linestyle='solid', c='black', marker='o', markersize=3)
+plt.grid()
+plt.title("Helsinki-Vantaa Airport")
+plt.xlabel("Time")
+plt.ylabel("Temperature (Celsius)")
 
 # Set output file name
-outputfp = ""
+outputfp = "temp_line_plot.png"
 
 # Save plot as image
 # YOUR CODE HERE 4
+
 
 import os
 
